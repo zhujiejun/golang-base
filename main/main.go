@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/zhujiejun/server"
 	"log"
 	"net/http"
-	"github.com/zhujiejun/Server"
 	//"github.com/gin-gonic/gin"
 )
 
@@ -18,7 +18,7 @@ import (
 	r.Run() // listen and serve on 0.0.0.0:8080
 }*/
 func main() {
-	http.HandleFunc("/", Server.handler)
-	http.HandleFunc("/count", Server.counter)
+	http.HandleFunc("/", server.handler)
+	http.HandleFunc("/count", server.counter)
 	log.Fatal(http.ListenAndServe("192.168.100.100:18080", nil))
 }
