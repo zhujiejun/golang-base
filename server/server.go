@@ -15,7 +15,7 @@ import "sync"
 var lock sync.Mutex
 var count int
 
-func handler(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 	//lock.Lock()
 	//count++
 	//lock.Unlock()
@@ -23,7 +23,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	lissajous(w)
 }
 
-func counter(w http.ResponseWriter, r *http.Request) {
+func Counter(w http.ResponseWriter, r *http.Request) {
 	lock.Lock()
 	_, _ = fmt.Fprintf(w, "Count %d\n", count)
 	lock.Unlock()
