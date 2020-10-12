@@ -1,3 +1,3 @@
-module github.com/zhujiejun/server
+module github.com/zhujiejun/golang-base/server
 
 go 1.15
