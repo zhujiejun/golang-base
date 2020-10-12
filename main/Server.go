@@ -27,7 +27,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	//count++
 	//lock.Unlock()
 	//fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
-	lissajousout(w)
+	lissajous(w)
 }
 
 func counter(w http.ResponseWriter, r *http.Request) {
@@ -36,7 +36,7 @@ func counter(w http.ResponseWriter, r *http.Request) {
 	lock.Unlock()
 }
 
-func lissajousout(out io.Writer) {
+func lissajous(out io.Writer) {
 	const (
 		cycles   = 5
 		delay    = 8
