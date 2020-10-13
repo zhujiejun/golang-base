@@ -1,21 +1,21 @@
 package main
 
 import (
-	"github.com/zhujiejun/golang-base/server"
-	"log"
-	"net/http"
+	"fmt"
+	"github.com/zhujiejun/golang-base/greet"
+	"os"
 )
 
-/*func main() {
+func main() {
 	message := greet.Hello("Golang")
 	if len(os.Args) > 1 {
 		message = greet.Hello(os.Args[1])
 	}
 	fmt.Println(message)
-}*/
+}
 
-func main() {
+/*func main() {
 	http.HandleFunc("/", server.Handler)
 	http.HandleFunc("/count", server.Counter)
 	log.Fatal(http.ListenAndServe("192.168.100.100:18080", nil))
-}
+}*/
