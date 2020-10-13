@@ -1,4 +1,4 @@
-module github.com/zhujiejun/golang-base/main
+module github.com/zhujiejun/golang_base/main
 
 go 1.15
 
