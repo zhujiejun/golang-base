@@ -19,8 +19,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	lock.Lock()
 	count++
 	lock.Unlock()
-	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
-	//lissajous(w)
+	//fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
+	lissajous(w)
 }
 
 func Counter(w http.ResponseWriter, r *http.Request) {
