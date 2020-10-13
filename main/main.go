@@ -1,21 +1,17 @@
 package main
 
 import (
-	//"github.com/gin-gonic/gin"
-	"github.com/zhujiejun/server"
+	"github.com/zhujiejun/golang-base/server"
 	"log"
 	"net/http"
 )
 
 /*func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		fmt.Println("hello world!")
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-	r.Run() // listen and serve on 0.0.0.0:8080
+	message := greet.Hello("Golang")
+	if len(os.Args) > 1 {
+		message = greet.Hello(os.Args[1])
+	}
+	fmt.Println(message)
 }*/
 
 func main() {
